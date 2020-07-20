@@ -35,7 +35,7 @@ spec:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 25Gi
+      storage: 60Gi
 ---
 # How do we want it implemented
 # apiVersion: v1
