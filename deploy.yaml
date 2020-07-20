@@ -35,7 +35,7 @@ spec:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 33Gi
+      storage: 13Gi
 ---
 # How do we want it implemented
 apiVersion: storage.k8s.io/v1
