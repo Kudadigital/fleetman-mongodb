@@ -35,22 +35,23 @@ spec:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 60Gi
+      storage: 25Gi
 ---
 # How do we want it implemented
-# apiVersion: v1
-# kind: PersistentVolume
-# metadata:
-#   name: mongo-pvc
-# spec:
-#   storageClassName: aws-ssd
-#   capacity:
-#     storage: 25Gi
-#   accessModes:
-#     - ReadWriteOnce
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: mongo-pvc
+spec:
+  storageClassName: aws-ssd
+  capacity:
+    storage: 25Gi
+  accessModes:
+    - ReadWriteOnce
 #   hostPath:
 #     path: "/mnt/mongodb/"
 #     type: DirectoryOrCreate
+---
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
