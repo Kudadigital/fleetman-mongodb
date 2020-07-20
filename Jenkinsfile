@@ -22,7 +22,7 @@ pipeline {
          }
       }
 
-      stage('Build and Push Image') {
+      stage('Build and Push Image to dockerhub') {
          steps {
            sh 'echo No docker image for Mongodb'
          }
