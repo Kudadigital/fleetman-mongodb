@@ -37,7 +37,7 @@ spec:
     requests:
       storage: 66Gi
 ---
-# How do we want it implemented
+# How do we want it implemented? What physical storage do we want in our cluster?
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
